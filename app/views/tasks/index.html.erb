@@ -1,2 +1,9 @@
-<h1>Tasks#index</h1>
-<p>Find me in app/views/tasks/index.html.erb</p>
+<section class = "tasks">
+  <h2>Tasks</h2>
+  <% all_tasks.each do |task| %>
+    <p>
+      <%= task.task %>
+      <strong><%= task.complete %></strong>
+   </p>
+  <% end %>
+</section>
