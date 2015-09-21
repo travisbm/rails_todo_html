@@ -8,4 +8,5 @@ Rails.application.routes.draw do
                       #           PATCH  /tasks/:id(.:format)      tasks#update
                       #           PUT    /tasks/:id(.:format)      tasks#update
                       #           DELETE /tasks/:id(.:format)      tasks#destroy
+  root "tasks#index"
 end

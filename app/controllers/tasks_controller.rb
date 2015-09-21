@@ -8,6 +8,8 @@ class TasksController < ApplicationController
       end
       f.json do
         render json: tasks.to_json, status: 200
+      end
+    end
   end
 
   def show
