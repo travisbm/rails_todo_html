@@ -34,6 +34,7 @@ class TasksController < ApplicationController
   end
 
   def update
+    Task.find(params[:id]).complete = TRUE
   end
 
   def destroy
