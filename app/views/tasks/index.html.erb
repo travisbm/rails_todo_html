@@ -2,8 +2,21 @@
   <h2>ToDo List</h2>
   <% all_tasks.each do |task| %>
     <p>
-      <%= task.task %>
+      <a href = '/tasks/<%= task.id %>'><%= task.task %></a>
       <strong><%= task.complete %></strong>
    </p>
   <% end %>
+
+<section class = "new_task">
+  <form action="http://localhost:3000/tasks" method="post">
+    <div>New Task:
+      <input type="text" name="new_task" size="20" maxlength="50" />
+    </div>
+
+    <div class="button">
+      <button type="submit">Save</button>
+    </div>
+  </form>
+</section>
+
 </section>

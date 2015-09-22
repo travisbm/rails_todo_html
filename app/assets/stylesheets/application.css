@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: "microsoft yi baiti", Helvetica, sans-serif;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header a {
+  font-size: 20px;
+}
+
+.tasks p {
+  font-size: 24px;
+}
+
+.task p {
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none
+}
+
+a:hover {
+  color: blue;
+}
+
+a {
+  color: black;
+}
+
